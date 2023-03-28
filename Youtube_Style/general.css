@@ -1,0 +1,67 @@
+.searchbox{
+  font-size: 20px;
+  text-align: start;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  display: block;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: darkgray;
+}
+.thumbnail{
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.video-title{
+  display: block; /*กินพื้นที่ 1 block*/
+  margin-bottom:10px ;
+  margin-top: 10px;
+
+}
+.video-aurthor,  /*ตั้งค่าหลายตัวในรอบเดียว*/
+.video-stats{
+  display:block; 
+  color: gray;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+.channel-picture{
+   margin-top: 10px;
+}
+.video-info{
+  display: inline-block;
+}
+.profile-picture{
+  width: 40px;
+  margin-bottom: 50px;
+  border-radius: 50px ;
+  border-style: solid;
+  border: none;
+  cursor: pointer;
+}
+.main{
+  display: inline-block;
+
+}
+.video-info-grid{
+  display: grid;
+  grid-template-columns:50px 1fr ;  /*รูปปกใช้ 50px ชื่อคลิปใช้พท.ที่เหลือ*/
+}
+.main-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+
+
+body{
+  margin: 0;
+  padding-top: 70px;
+  padding-left: 80px;
+  background-color: rgb(246, 244, 244);
+}

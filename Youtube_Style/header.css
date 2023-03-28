@@ -1,0 +1,252 @@
+.searchbox{
+  flex: 1;
+  border-top-right-radius: 50px;
+  border-style: solid;
+  border-color: darkgray;
+  width:100px;
+  height: 34px;
+  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.5);  /*inset(shadow inside) เงาข้างใน*/
+  margin-top: 7px;
+  text-align: start;
+}
+.searchbox::placeholder{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  padding-right: 1000px;
+}
+.header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /*ติดอยู่กับที่ไม่ไปไหน*/
+  top:0px;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(183, 182, 182);
+  z-index: 100;
+}
+.left-section{
+  align-items: center;
+  width: 300px;
+  flex-shrink: 0;
+}
+.middle-section{
+  width: 0px;
+  flex: 1;
+  align-items: center;
+  display: flex;
+  flex-shrink: 1;
+  margin-right: 50px;
+}
+.right-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 137px;
+  margin-right: 20px;
+  flex-shrink: 0;  /*ไม่โดนลดขนาก*/
+}
+.menu{
+  height: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.logo{
+  height: 24px;
+  padding-bottom: 7px;
+  cursor: pointer;
+}
+.search-button{
+  height: 39px;
+  width: 60px;
+  cursor: pointer;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-style: solid;
+  border-color: darkgray;
+  margin-bottom: 9px;
+  margin-left: -40px;  /*ขยับเข้าไปทางซ้าย*/
+  background-color: rgb(254, 254, 254);
+  margin-top: 6px;
+}
+.voice-search-button{
+  height: 40px;
+  width:40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.voice-search-button:hover{
+  background-color: rgb(201, 201, 201);
+
+}
+.search{
+  object-fit: contain;
+  height: 24px;
+  cursor: pointer;
+  align-items: center;
+  position: relative;
+}
+.mic{
+  position: relative;
+  object-fit: contain;
+  height: 23px;
+  cursor: pointer;
+}
+.upload{
+  position: relative;
+  height: 24px;
+  cursor: pointer;
+}
+.notification{
+  position: relative;
+  cursor: pointer;
+}
+.notification-num{
+  position: absolute;
+  background-color: #CC0000;  
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  top: -2px;
+  right: -10px; /*ไปทางขวา*/
+  border-radius: 8px;
+  padding-top: 1px;
+  padding-bottom: 0.5px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.notification-img{
+  cursor: pointer;
+  height: 24px;
+}
+.profile{
+  position: relative;
+  height: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.toolkit{
+  position: absolute;
+  background-color: grey;
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+  bottom: -27px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px; 
+  border-radius: 3px;
+  opacity: 0;
+  z-index: 100;
+}
+.search-button:hover .toolkit{
+  opacity: 1;
+}
+.mic-toolkit{
+  position: absolute;
+  bottom: -25px;
+  right: 140px;
+  background-color: grey;
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px; 
+  border-radius: 3px;
+  opacity: 0;
+}
+.voice-search-button:hover .mic-toolkit{
+  opacity: 1;
+}
+.upload-toolkit{
+  background-color: grey;
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px; 
+  border-radius: 3px;
+  position: absolute;
+  bottom: -28px;
+  right: 107px;
+  opacity: 0;
+}
+.UPLOAD{
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: white;
+  border-radius: 20px;
+}
+.UPLOAD:hover{
+  background-color: rgb(201, 201, 201);
+}
+.UPLOAD:hover .upload-toolkit{
+  opacity: 1;
+}
+.notification-toolkit{
+  background-color: grey;
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 14px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px; 
+  border-radius: 3px;
+  position: absolute;
+  bottom: -39px;
+  right: -50px;
+  opacity: 0;
+}
+.NOTIFICATION{
+  border: none;
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+.NOTIFICATION:hover{
+  background-color: rgb(201, 201, 201);
+}
+.NOTIFICATION:hover .notification-toolkit{
+  opacity: 1;
+}
+.MENU{
+  height: 40px;
+}
+.YOUTUBE{
+  width: 117px;
+  height: 30px;
+  border: none;
+  background: white;
+}
+.yt-toolkit{
+  background-color: grey;
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 14px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px; 
+  border-radius: 3px;
+  position: absolute;
+  bottom: -10px;
+  right: 500px;
+  opacity: 0;
+}
+.YOUTUBE:hover .yt-toolkit{
+  opacity: 1;
+}

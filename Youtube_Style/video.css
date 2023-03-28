@@ -1,0 +1,64 @@
+.thumbnail{
+  width: 100%; 
+}
+.video-title{
+  display: block; /*กินพื้นที่ 1 block*/
+  margin-bottom:10px ;
+  margin-top: 10px;
+
+}
+.video-aurthor,  /*ตั้งค่าหลายตัวในรอบเดียว*/
+.video-stats{
+  display:block; 
+  color: gray;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+.channel-picture{
+   margin-top: 10px;
+}
+.video-info{
+  display: inline-block;
+}
+.profile-picture{
+  width: 40px;
+  margin-bottom: 50px;
+  border-radius: 50px ;
+  border-style: solid;
+  border: none;
+  cursor: pointer;
+}
+.main{
+  display: inline-block;
+
+}
+.video-info-grid{
+  display: grid;
+  grid-template-columns:50px 1fr ;  /*รูปปกใช้ 50px ชื่อคลิปใช้พท.ที่เหลือ*/
+}
+.main-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+.thumbnail-row {
+  position: relative;
+}
+.video-time{
+  position:absolute;   /*absolute ใน relative ไปด้วยกันได้*/
+  background-color: black;
+  color: white;
+  bottom: 8px;
+  right: 3px;
+  font-size: 12px;
+  font-family: Tahoma;
+  border-radius: 4px;
+  font-weight: 500;  /*400 อัการปกติ 500 หนาขึ้นหน่อย 700 หนามาก*/
+  padding-top: 1px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
